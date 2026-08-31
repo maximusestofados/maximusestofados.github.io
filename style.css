@@ -1,0 +1,1001 @@
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f4ef;
+    color: #29251f;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ===========================
+           MENU
+=========================== */
+
+.navbar {
+    background-color: #2b2119 !important;
+    border-bottom: 2px solid #b8874b;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    color: #d9a15b !important;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d9a15b !important;
+}
+
+
+/* ===========================
+          BANNER
+=========================== */
+
+.banner-principal {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(35, 25, 18, 0.94) 0%,
+            rgba(35, 25, 18, 0.76) 45%,
+            rgba(35, 25, 18, 0.30) 100%
+        ),
+        url("img/fachada.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 90px 20px;
+}
+
+.conteudo-banner {
+    max-width: 720px;
+}
+
+.etiqueta-banner {
+    display: inline-block;
+
+    color: #ffffff;
+    background-color: #a8753d;
+
+    padding: 7px 15px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+}
+
+.conteudo-banner h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.conteudo-banner h2 {
+    color: #e2ad6c;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.conteudo-banner p {
+    max-width: 650px;
+    color: #f0ece6;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-banner .destaque-banner {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.conteudo-banner .destaque-banner strong {
+    color: #e2ad6c;
+}
+
+.botoes-banner {
+    margin-top: 28px;
+}
+
+.conteudo-banner .btn {
+    margin-right: 12px;
+    margin-bottom: 10px;
+    padding: 13px 28px;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+}
+
+
+/* ===========================
+        SEÇÕES PRINCIPAIS
+=========================== */
+
+.secao {
+    padding: 80px 20px;
+}
+
+.titulo-secao {
+    color: #33281f;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.subtitulo-secao {
+    color: #71675e;
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+#sofas {
+    background-color: #f7f4ef;
+}
+
+#moveis {
+    background-color: #ebe4da;
+}
+
+#destaques {
+    background-color: #33281f;
+}
+
+#galeria {
+    background-color: #f7f4ef;
+}
+
+#sobre {
+    background-color: #e8ded1;
+}
+
+#localizacao {
+    background-color: #f7f4ef;
+}
+
+
+/* ===========================
+        CARDS DE PRODUTOS
+=========================== */
+
+.produto-card {
+    overflow: hidden;
+
+    background-color: #ffffff;
+    color: #29251f;
+
+    border: 1px solid #ddd2c5;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(60, 45, 30, 0.12);
+
+    transition: 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #b8874b;
+
+    box-shadow: 0 16px 35px rgba(60, 45, 30, 0.20);
+}
+
+.produto-imagem {
+    height: 280px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-shadow: 0 2px 7px #000000;
+}
+
+
+/* ===========================
+        IMAGENS DOS PRODUTOS
+=========================== */
+
+.produto-sofa-1 {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("img/sofa-pronta-entrega-1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.produto-moveis {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("img/banqueta.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.produto-sofa-3 {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("img/sofa-sob-medida.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ===========================
+        SEÇÃO DESTAQUES
+=========================== */
+
+#destaques .titulo-secao {
+    color: #ffffff;
+}
+
+#destaques .subtitulo-secao {
+    color: #d8d0c7;
+}
+
+.destaque-card {
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.07);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.destaque-card:hover {
+    transform: translateY(-6px);
+
+    background-color: rgba(255, 255, 255, 0.11);
+
+    border-color: #d9a15b;
+}
+
+.destaque-card i {
+    color: #d9a15b;
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.destaque-card h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.destaque-card p {
+    color: #d3cbc2;
+    margin-bottom: 0;
+}
+
+
+/* ===========================
+             GALERIA
+=========================== */
+
+.carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 16px 35px rgba(50, 35, 20, 0.25);
+}
+
+.slide-maximus {
+    min-height: 460px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 55px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-maximus h3 {
+    color: #ffffff;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    text-shadow: 0 3px 10px #000000;
+}
+
+.slide-maximus p {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    text-shadow: 0 3px 10px #000000;
+}
+
+
+/*
+   Imagens provisórias.
+   Depois serão substituídas pelas fotos
+   reais da Máximus.
+*/
+
+.slide-um {
+    background-image:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.90)
+        ),
+        url("img/pc-gamer.jpg");
+}
+
+.slide-dois {
+    background-image:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.90)
+        ),
+        url("img/teclado.jpg");
+}
+
+.slide-tres {
+    background-image:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.90)
+        ),
+        url("img/headset.jpg");
+}
+
+
+/* ===========================
+             SOBRE
+=========================== */
+
+.sobre-conteudo {
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.etiqueta-secao {
+    display: inline-block;
+
+    color: #ffffff;
+    background-color: #a8753d;
+
+    padding: 7px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+}
+
+.sobre-conteudo h2 {
+    color: #392c21;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.sobre-conteudo p {
+    color: #655c53;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===========================
+          LOCALIZAÇÃO
+=========================== */
+
+.localizacao-conteudo {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.localizacao-info {
+    background-color: #ffffff;
+
+    border: 1px solid #ddd2c5;
+    border-radius: 18px;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(60, 45, 30, 0.10);
+}
+
+.localizacao-info > i {
+    color: #a8753d;
+    font-size: 50px;
+}
+
+.localizacao-info h3 {
+    color: #382c22;
+
+    font-size: 27px;
+
+    margin: 15px 0 10px;
+}
+
+.localizacao-info p {
+    color: #6b6259;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ===========================
+             CONTATO
+=========================== */
+
+.contato {
+    background:
+        linear-gradient(
+            135deg,
+            #6e4828,
+            #a8753d
+        );
+
+    padding: 75px 20px;
+
+    text-align: center;
+}
+
+.contato h2 {
+    color: #ffffff;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.contato p {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+.contato-botoes .btn {
+    margin: 5px 7px;
+}
+
+
+/* ===========================
+             RODAPÉ
+=========================== */
+
+footer {
+    background-color: #241b15;
+
+    color: #c8beb5;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 2px solid #9a672f;
+}
+
+.rodape-conteudo h3 {
+    color: #d9a15b;
+
+    font-size: 27px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.rodape-conteudo p {
+    margin-bottom: 5px;
+}
+
+.rodape-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.rodape-links a {
+    color: #ffffff;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.rodape-links a:hover {
+    color: #d9a15b;
+}
+
+.rodape-links i {
+    margin-right: 5px;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+
+    margin: 25px 0;
+}
+
+footer .rodape-aviso {
+    color: #8e847b;
+
+    font-size: 13px;
+
+    margin-top: 10px;
+}
+
+
+/* ===========================
+       MENSAGEM JAVASCRIPT
+=========================== */
+
+.mensagem-sistema {
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    display: none;
+
+    max-width: 340px;
+
+    padding: 15px 22px;
+
+    background-color: #198754;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+    font-weight: bold;
+
+    z-index: 2000;
+}
+
+
+/* ===========================
+             TABLET
+=========================== */
+
+@media (max-width: 991px) {
+
+    .banner-principal {
+        min-height: 500px;
+
+        background-position: center;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 48px;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 29px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .slide-maximus {
+        min-height: 400px;
+    }
+
+}
+
+
+/* ===========================
+             CELULAR
+=========================== */
+
+@media (max-width: 768px) {
+
+    .banner-principal {
+        min-height: 570px;
+
+        padding: 65px 18px;
+
+        background-image:
+            linear-gradient(
+                rgba(35, 25, 18, 0.84),
+                rgba(35, 25, 18, 0.90)
+            ),
+            url("img/fachada.jpg");
+
+        background-position: center;
+
+        text-align: center;
+    }
+
+    .conteudo-banner {
+        margin: 0 auto;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 39px;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 26px;
+    }
+
+    .conteudo-banner p {
+        font-size: 17px;
+    }
+
+    .conteudo-banner .btn {
+        display: block;
+
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+    .secao {
+        padding: 60px 16px;
+    }
+
+    .titulo-secao {
+        font-size: 32px;
+    }
+
+    .subtitulo-secao {
+        font-size: 16px;
+
+        margin-bottom: 32px;
+    }
+
+    .produto-imagem {
+        height: 240px;
+    }
+
+    .slide-maximus {
+        min-height: 330px;
+
+        padding: 30px;
+    }
+
+    .slide-maximus h3 {
+        font-size: 29px;
+    }
+
+    .slide-maximus p {
+        font-size: 17px;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 32px;
+    }
+
+    .contato h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ===========================
+          CELULAR PEQUENO
+=========================== */
+
+@media (max-width: 420px) {
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 33px;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 23px;
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;
+    }
+
+    .produto-card .card-body {
+        padding: 21px;
+    }
+
+    .slide-maximus {
+        min-height: 280px;
+
+        padding: 24px;
+    }
+
+    .slide-maximus h3 {
+        font-size: 24px;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 28px;
+    }
+
+}
+/* ===========================
+   AMPLIAÇÃO DAS IMAGENS
+=========================== */
+
+.produto-imagem {
+    cursor: pointer;
+}
+
+
+/* Modal */
+
+.modal-imagem {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.90);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    z-index: 9999;
+}
+
+
+/* Modal aberto */
+
+.modal-imagem.ativo {
+    display: flex;
+}
+
+
+/* Imagem ampliada */
+
+#imagem-ampliada {
+    max-width: 92%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.60);
+}
+
+
+/* Botão X */
+
+.fechar-modal {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    color: #ffffff;
+
+    font-size: 35px;
+    line-height: 35px;
+
+    cursor: pointer;
+
+    z-index: 10000;
+}
+
+.fechar-modal:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .modal-imagem {
+        padding: 15px;
+    }
+
+    #imagem-ampliada {
+        max-width: 96%;
+        max-height: 85vh;
+    }
+
+    .fechar-modal {
+        top: 10px;
+        right: 15px;
+    }
+
+}
+/* ==================================================
+   BOTÕES DA GALERIA
+================================================== */
+
+.galeria-anterior,
+.galeria-proximo {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 10001;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+
+.galeria-anterior:hover,
+.galeria-proximo:hover {
+    background: rgba(255, 255, 255, 0.35);
+
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+.galeria-anterior {
+    left: 25px;
+}
+
+
+.galeria-proximo {
+    right: 25px;
+}
+
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .galeria-anterior,
+    .galeria-proximo {
+        width: 45px;
+        height: 45px;
+
+        font-size: 25px;
+    }
+
+    .galeria-anterior {
+        left: 10px;
+    }
+
+    .galeria-proximo {
+        right: 10px;
+    }
+
+}
